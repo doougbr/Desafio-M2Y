@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DesafioM2yAndroid</string>
+    <string name="title">The Very Best Of\nJohnny Depp</string>
+    <string name="likes_count">%1$s Likes</string>
+    <string name="watch_count">%1$s Watched</string>
+    <string name="similar_movie_title">Edward Scissorhands</string>
+    <string name="similar_movie_year">1990</string>
+    <string name="similar_movie_genre">Drama, Fantasy</string>
+</resources>

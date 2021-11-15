@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+    tools:showIn="@layout/activity_main">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_view_movie_cover"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:src="@drawable/edward"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_movie_title"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ellipsize="marquee"
+        android:maxLines="2"
+        android:text="@string/similar_movie_title"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_movie_year"
+        app:layout_constraintStart_toEndOf="@id/image_view_movie_cover"
+        app:layout_constraintTop_toTopOf="@id/image_view_movie_cover"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/text_view_movie_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/similar_movie_year"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/text_view_movie_title"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_movie_title" />
+
+    <TextView
+        android:id="@+id/text_view_movie_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/similar_movie_genre"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/text_view_movie_year"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_movie_title" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_view_check_circle"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_check_circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#0AFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/text_view_movie_title"
+        app:layout_constraintTop_toBottomOf="@id/text_view_movie_year" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

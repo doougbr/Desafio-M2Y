@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_small">16dp</dimen>
+    <dimen name="margin_medium">28dp</dimen>
+    <dimen name="margin_large">40dp</dimen>
+    <dimen name="text_size_movie_info">14sp</dimen>
+</resources>
